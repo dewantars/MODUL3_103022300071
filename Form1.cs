@@ -67,7 +67,6 @@ namespace jurnal3
         private void buttont_Click(object sender, EventArgs e)
         {
             result += Convert.ToInt32(output.Text);
-            output.Text = result.ToString();
             output.Text = "";
         }
 
