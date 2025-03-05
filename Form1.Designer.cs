@@ -37,10 +37,10 @@
             button7 = new Button();
             button8 = new Button();
             button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            textBox1 = new TextBox();
+            buttont = new Button();
+            button0 = new Button();
+            buttons = new Button();
+            output = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -61,6 +61,7 @@
             button2.TabIndex = 1;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -70,6 +71,7 @@
             button3.TabIndex = 2;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -89,6 +91,7 @@
             button5.TabIndex = 4;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -98,6 +101,7 @@
             button6.TabIndex = 5;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -107,6 +111,7 @@
             button7.TabIndex = 6;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -116,6 +121,7 @@
             button8.TabIndex = 7;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -125,51 +131,55 @@
             button9.TabIndex = 8;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
-            // button10
+            // buttont
             // 
-            button10.Location = new Point(302, 118);
-            button10.Name = "button10";
-            button10.Size = new Size(64, 58);
-            button10.TabIndex = 9;
-            button10.Text = "+";
-            button10.UseVisualStyleBackColor = true;
+            buttont.Location = new Point(303, 118);
+            buttont.Name = "buttont";
+            buttont.Size = new Size(64, 58);
+            buttont.TabIndex = 9;
+            buttont.Text = "+";
+            buttont.UseVisualStyleBackColor = true;
+            buttont.Click += buttont_Click;
             // 
-            // button11
+            // button0
             // 
-            button11.Location = new Point(101, 310);
-            button11.Name = "button11";
-            button11.Size = new Size(64, 58);
-            button11.TabIndex = 10;
-            button11.Text = "0";
-            button11.UseVisualStyleBackColor = true;
+            button0.Location = new Point(101, 310);
+            button0.Name = "button0";
+            button0.Size = new Size(64, 58);
+            button0.TabIndex = 10;
+            button0.Text = "0";
+            button0.UseVisualStyleBackColor = true;
+            button0.Click += button0_Click;
             // 
-            // button12
+            // buttons
             // 
-            button12.Location = new Point(302, 182);
-            button12.Name = "button12";
-            button12.Size = new Size(64, 58);
-            button12.TabIndex = 11;
-            button12.Text = "=";
-            button12.UseVisualStyleBackColor = true;
+            buttons.Location = new Point(302, 182);
+            buttons.Name = "buttons";
+            buttons.Size = new Size(64, 58);
+            buttons.TabIndex = 11;
+            buttons.Text = "=";
+            buttons.UseVisualStyleBackColor = true;
+            buttons.Click += buttons_Click;
             // 
-            // textBox1
+            // output
             // 
-            textBox1.Location = new Point(50, 56);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(302, 23);
-            textBox1.TabIndex = 12;
-            textBox1.TextChanged += textBox1_TextChanged;
+            output.Location = new Point(50, 56);
+            output.Name = "output";
+            output.Size = new Size(302, 23);
+            output.TabIndex = 12;
+            output.TextChanged += textBox1_TextChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(395, 450);
-            Controls.Add(textBox1);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(button10);
+            Controls.Add(output);
+            Controls.Add(buttons);
+            Controls.Add(button0);
+            Controls.Add(buttont);
             Controls.Add(button9);
             Controls.Add(button8);
             Controls.Add(button7);
@@ -181,6 +191,7 @@
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -196,9 +207,9 @@
         private Button button7;
         private Button button8;
         private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private TextBox textBox1;
+        private Button buttont;
+        private Button button0;
+        private Button buttons;
+        private TextBox output;
     }
 }
